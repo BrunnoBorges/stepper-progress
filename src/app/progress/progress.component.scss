@@ -24,7 +24,11 @@
       grid-row: 2 / -1;
       grid-column: 1 / -1;
     }
-  }
+}
+
+.infoTitle {
+    text-align: center;
+}
   
   .container {
     display: inline-flex;
@@ -32,30 +36,30 @@
     position: relative;
   
   
-    svg#checkbox {
-      width: 48px;
-      height: 48px;
-      stroke-width: 6;
-  
-      .circle {
+svg#checkbox {
+    width: 48px;
+    height: 48px;
+    stroke-width: 6;
+
+        .circle {
         stroke-dasharray: 320;
         stroke-dashoffset: 320;
         fill: #d2d2d2;
         transition: stroke-dashoffset 0.5s,
-          fill 0.5s 0.3s cubic-bezier(0.45, 0, 0.55, 1);
-      }
-  
-      .check {
+            fill 0.5s 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+        }
+
+        .check {
         stroke-dasharray: 70;
         stroke-dashoffset: 70;
         stroke: #fff;
         fill: none;
         transition: all 0.5s 0.5s cubic-bezier(0.45, 0, 0.55, 1);
-      }
-    }
-  }
+        }
+    }   
+}
   
-  .check-box {
+.check-box {
     display: flex;
     align-items: center;
     position: relative;
@@ -106,9 +110,9 @@
       }
     }
   
-  }
+}
   
-  .progress-line {
+.progress-line {
     width: 140px;
     margin: 0 10px;
     height: 4px;
@@ -122,30 +126,30 @@
       width: 0%;
       transition: all 0.5s 0.5s cubic-bezier(0.45, 0, 0.55, 1);
     }
-  }
+}
   
-  .progress-line.active {
+.progress-line.active {
     .progress-percent {
       background: #234dc2;
       width: 50%;
     }
-  }
+}
   
-  .progress-line.complete {
+.progress-line.complete {
     .progress-percent {
       width: 100%;
       background: #23c274;
     }
-  }
+}
   
-  .check-box.active {
+.check-box.active {
     svg#checkbox {
       .circle {
         fill: #234dc2;
       }
     }
-  }
-  .check-box.complete {
+}
+.check-box.complete {
     svg#checkbox {
       .circle {
         stroke-dashoffset: 0;
@@ -156,4 +160,4 @@
         stroke-dashoffset: 0;
       }
     }
-  }
+}
