@@ -1,0 +1,37 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+  
+.example-full-width {
+    width: 100%;
+}
+
+.button-primary {
+    padding: 0.5rem;
+    border: 1px solid #17a2b8;
+    color: #fff;
+    margin: 0 1rem;
+    border-radius: 3px;
+    background-color: #17a2b8;
+    cursor: pointer;
+    &:hover {
+        background-color: #107e8f;
+        border: 1px solid #107e8f;
+    }
+}
+
+.button-secundary {
+    padding: 0.5rem;
+    border: 1px solid #17a2b8;
+    color: #17a2b8;
+    margin: 0 1rem;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+    &:hover {
+        background-color: #17a2b8;
+        color: #fff;
+    }
+}
